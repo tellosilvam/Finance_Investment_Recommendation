@@ -1,0 +1,4 @@
+Ticker,Annualized_Average_Return_Percentage,Annualized_Volatility_Percentage,Rounded_Sharpe_Ratio,VaR_95_Percentage,Last_Year_Avg_Return_Percentage,Last_3_Months_Avg_Return_Percentage,Investment_Recommendation
+MA,23.81,27.53,0.73,-2.62,23.57,45.92,Good Long-term Investment
+V,20.39,25.11,0.66,-2.34,19.11,11.47,Good Long-term Investment
+AXP,16.81,29.03,0.45,-2.6,66.14,67.47,Short-term Opportunity
