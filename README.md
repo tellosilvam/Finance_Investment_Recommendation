@@ -1,53 +1,117 @@
-# Comparing Stock Performance of Amex, Visa, and Mastercard Through Data Analysis
+# 📊 Comparing Stock Performance of Amex, Visa, and Mastercard Through Data Analysis
 
-## Links
+## 🔗 Links
 
-- [**Medium Blog**](https://medium.com/@tellosilvam/comparing-stock-performance-of-amex-visa-and-mastercard-through-data-analysis-491e7acef3fb): Blog explaining the whole project process, assuming a financial analysis posture.
-- [**SQL Code**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql): Detailed SQL Code.
-- [**Python API Code**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/API_Financial.ipynb): Yahoo Finance API.
-- [**Tableau Dashboard**](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard): Interactive visualizations.
-- [**Project Portfolio**](https://www.datascienceportfol.io/migueltello): Portfolio web.
+- [![Medium](https://img.shields.io/badge/Medium-Blog-white?logo=medium&logoColor=white)](https://medium.com/@tellosilvam/comparing-stock-performance-of-amex-visa-and-mastercard-through-data-analysis-491e7acef3fb): 📝 Blog explaining the whole project process, assuming a financial analysis posture.  
+- [![SQL](https://img.shields.io/badge/SQL-Code-orange?logo=sqlite&logoColor=white)](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql): 🗄️ Detailed SQL Code.  
+- [![Python API](https://img.shields.io/badge/Python-API-yellow?logo=python&logoColor=white)](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/API_Financial.ipynb): 📡 Yahoo Finance API integration.  
+- [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue?)](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard): 📊 Interactive visualizations.  
+- [![Portfolio](https://img.shields.io/badge/Portfolio-Website-purple?)](https://www.datascienceportfol.io/migueltello): 🌐 Portfolio web.  
 
 ![FinancialThumb](thumbnail.png)
 
-## Introduction
+## Introduction  
 
-Payment processors such as American Express (AXP), Visa (V), and Mastercard (MA) have experienced significant expansion in the dynamic financial industry, particularly with the increase in cashless transactions. Even though their stocks have had differing degrees of success, knowing their past performance might provide important clues about their potential in the future. These three companies represent a fairly accepted oligopoly in the finance industry, one of the most stable through a crisis or recession. It is a known consensus that to diversify your portfolio, you must seek to invest in at least one of these businesses.
+Payment processors such as **American Express (AXP)**, **Visa (V)**, and **Mastercard (MA)** have experienced significant expansion in the dynamic financial industry, particularly with the rise of **cashless transactions 📈**. Even though their stocks have had varying degrees of success, **analyzing their past performance** can provide valuable insights into their future potential. These three companies form a well-established **oligopoly** in the finance industry, known for its **stability during economic crises and recessions**. It is widely accepted that to **diversify your portfolio**, investing in at least one of these businesses is a smart strategy.  
 
-In contrast to Visa and Mastercard, which essentially serve as payment networks, American Express has a credit card-focused business strategy. V and MA function as transaction processors, excluding the exposure to credit risk that AXP has as they issue their cards directly. This peculiar company approach shapes Amex’s singular stock performance and financial profile.
+However, there are key differences between them:  
 
-Through this blog, I’ll walk you through the process of using Tableau, SQL and Python to examine and display the stock performance of these three finance giants.
+- **💳 Visa (V) & Mastercard (MA)** act primarily as **payment networks**, processing transactions while avoiding direct exposure to **credit risk**.  
+- **🏦 American Express (AXP)**, on the other hand, **issues its own credit cards**, taking on more **credit risk but also higher potential rewards** through interest and fees.  
 
-## SQL Code Explanation
+This unique business approach gives **Amex a distinctive financial profile** and stock performance compared to its competitors.  
 
-The first stage involved using Python to scrape the Yahoo Finance API data; the notebook may be viewed at this [**link**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/API_Financial.ipynb). The newly downloaded concatenated file was then scrubbed to initiate the use of SQL. New columns, such as daily and cumulative returns, were also included. After that, the yearly and monthly returns were entered into a table that would be useful for future study.
+🚀 **In this blog, I'll guide you through the process of using** `Tableau 📊`, `SQL 🗄️`, and `Python 🐍` **to analyze and visualize the stock performance of these three financial giants.**
 
-The moving average calculation is then performed, taking into account the Simple Moving Average (SMA) for the previous 20, 50, and 200 days. These data allowed the identification of the Golden and Death crosses listed in this file. The following stage also involved locating abnormalities, such as outliers and volume spikes.
+## 🗄️ SQL Code Explanation  
 
-Finally, some performance annualized metrics per ticker (Volatility, Sharpe, Sortino ratio and Value at Risk) were calculated. These measures and the returns over the previous year and the previous three months were used to establish the investment recommendation. V and MA were deemed "good long-term investments", while AXP was considered a "short-term opportunity."
+The first stage involved using **Python 🐍** to **scrape financial data** from the **Yahoo Finance API 📊**. You can check out the notebook at this [**link**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/API_Financial.ipynb). After gathering the data, it was **cleaned and structured** to prepare it for SQL analysis.  
 
-[**Detailed SQL Code**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql)
+### 🔍 Key Steps in SQL Processing:  
 
-## Tableau Dashboard
+- **Data Cleaning & Transformation**:  
+  - The **concatenated file** was scrubbed to ensure consistency.  
+  - New columns, such as **daily and cumulative returns 📈**, were added for better insights.  
+  - Yearly and monthly returns were stored in a table for future analysis.  
 
-Explore the interactive dashboard on [Tableau Public](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard). The dashboard includes various charts from this project and an interactive map where you can choose different metrics to evaluate. All charts are interconnected, enhancing the user experience.
+- **📊 Moving Averages Calculation**:  
+  - The **Simple Moving Average (SMA)** was computed for **20, 50, and 200 days**.  
+  - This helped identify key trading signals, such as **Golden Crosses & Death Crosses ⚡**.  
 
-The first conclusion we reach is that American Express outperformed last year, although this type of performance is extraordinary and does not follow the trend of the last ten years where the stock has underperformed compared to Visa and Mastercard. These stocks follow similar trends; although V has a higher return percentage, both are considered good long-term investments. Up next is the respective stock comparison using key financial parameters.
+- **📌 Identifying Market Abnormalities**:  
+  - Detection of **outliers** and **volume spikes** to spot unusual market activity.  
 
-## Key Parameters
+- **📈 Performance Metrics Calculation**:  
+  - **Annualized performance metrics** were computed per stock, including:  
+    - **Volatility**  
+    - **Sharpe Ratio**  
+    - **Sortino Ratio**  
+    - **⚠Value at Risk (VaR)**  
+  - These indicators, along with **returns over the past year and the last 3 months**, were used to establish an **investment recommendation**:  
+    - **✅ Visa (V) & Mastercard (MA):** Considered **good long-term investments**.  
+    - **⚡ American Express (AXP):** Identified as a **short-term opportunity**.  
 
-1. **Price-to-Earnings (P/E) Ratio:** According to Yahoo Finance, Visa’s P/E ratio is approximately 30, which indicates a strong level of market confidence; Mastercard’s P/E ratio is marginally higher at 39, and American Express’s P/E ratio is lower at 20, making this an indicator towards a more value-oriented company.
-2. **Price-to-Book (P/B) Ratio:** V and MA have premium market positions with P/B ratios of 16 and 64, respectively, while AXP may be undervalued with a ratio of 6.4.
-3. **Analyst Ratings:** All three have generally positive analyst ratings; V and MA are consistently rated as “Buy” or “Strong Buy,” while AXP has more erratic but positive ratings.
-4. **Price targets:** The market’s confidence in the future growth of all three stocks is indicated by the average prices of V, MA, and AXP, which are roughly $311, $530, and $275, respectively (V anticipates faster growth on average).
+🔗 **Check out the full SQL Code here:** [**Detailed SQL Code**](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql)  
 
-## Recommendation
+## Tableau Dashboard  
 
-With their higher valuations and price targets, Visa and Mastercard seem more appropriate for long-term growth-oriented investors based on these indicators, which coincides with the results given by the previous SQL analysis. Value investors looking for potential growth with less premium pricing may find American Express appealing due to its lower P/E and P/B ratios, making this a short-term opportunity with potential for long-term growth as well. Therefore, even if V and MA offer a well-balanced combination of growth and value, investors should think about their risk tolerance and reconsider their investment options regarding AXP.
+🚀 **Explore the interactive dashboard on** [**Tableau Public**](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard).  
 
-## Bibliography
+🔍 **What’s included?**  
+- 📈 **Various financial charts** to analyze stock performance.  
+- 🗺️ **Interactive map** allowing you to select different metrics for evaluation.  
+- 🔄 **Interconnected visualizations** for a seamless and enhanced user experience.  
 
-### Data Source:
-- Yahoo Finance. (October, 2024). Visa Inc. (V) stock price, news, quote & history. Yahoo! Finance. Retrieved October 11, 2024, from https://finance.yahoo.com/quote/V
-- Yahoo Finance. (October, 2024). Mastercard Incorporated (MA) stock price, news, quote & history. Yahoo! Finance. Retrieved October 11, 2024, from https://finance.yahoo.com/quote/MA
-- Yahoo Finance. (October, 2024). American Express Company (AXP) stock price, news, quote & history. Yahoo! Finance. Retrieved October 11, 2024, from https://finance.yahoo.com/quote/AXP
+### 📌 Key Insights:  
+✅ **American Express (AXP) outperformed** last year, but this was an **exceptional performance**.  
+📉 Over the past **10 years**, AXP has **underperformed** compared to **Visa (V) & Mastercard (MA)**.  
+📊 **Visa (V) & Mastercard (MA) show similar trends**, but **V has a slightly higher return percentage**.  
+💡 Both **Visa and Mastercard** are considered **strong long-term investments**.  
+
+## 📊 Key Parameters  
+
+### 1️⃣ **Price-to-Earnings (P/E) Ratio**  
+- **Visa (V)** → **~30** (Indicates strong market confidence ✅)  
+- **Mastercard (MA)** → **~39** (Reflects a higher market valuation 🔼)  
+- **American Express (AXP)** → **~20** (Represents a more value-oriented stock 🔽)  
+
+### 2️⃣ **Price-to-Book (P/B) Ratio**  
+- **Visa (V)** → **16** (Signifies a premium market position 🌟)  
+- **Mastercard (MA)** → **64** (Indicates a high valuation 🚀)  
+- **American Express (AXP)** → **6.4** (Potentially undervalued, presenting an opportunity 💰)  
+
+### 3️⃣ **Analyst Ratings**  
+- **Visa (V) & Mastercard (MA)** → Consistently rated as **"Buy"** or **"Strong Buy"** 🟢  
+- **American Express (AXP)** → Shows more **erratic** ratings, but still largely **positive** 🟡  
+
+### 4️⃣ **Price Targets**  
+- **Visa (V)** → **$311** (Reflects expectations of **faster growth** 🚀)  
+- **Mastercard (MA)** → **$530** (Strong market confidence and stability 📈)  
+- **American Express (AXP)** → **$275** (Represents steady, but less aggressive growth 📊)   
+
+## ✅ Recommendation  
+
+📈 **For Long-Term Growth Investors:**  
+- **Visa (V)** & **Mastercard (MA)** stand out as the **best options** based on **higher valuations and price targets**.  
+- These findings align with the **SQL analysis**, reinforcing their **strong long-term growth potential 🚀**.  
+
+💰 **For Value-Oriented Investors:**  
+- **American Express (AXP)** offers **lower P/E and P/B ratios**, making it an **appealing choice for value investors**.  
+- It presents a **short-term opportunity ⚡** with potential **long-term growth** if market conditions remain favorable.  
+
+⚖️ **Final Consideration:**  
+- While **V & MA provide a balanced mix of growth & value**, investors should **assess their risk tolerance** before deciding on AXP.  
+- Diversification and a well-thought-out **investment strategy** are key to maximizing returns.  
+
+📊 **Choose wisely based on your investment goals!** 🚀  
+
+## 📚 Data Source:  
+
+- **Yahoo Finance**. (October, 2024). **Visa Inc. (V)** stock price, news, quote & history.  
+  Yahoo! Finance. Retrieved October 11, 2024, from [**https://finance.yahoo.com/quote/V**](https://finance.yahoo.com/quote/V)  
+
+- **Yahoo Finance**. (October, 2024). **Mastercard Incorporated (MA)** stock price, news, quote & history.  
+  Yahoo! Finance. Retrieved October 11, 2024, from [**https://finance.yahoo.com/quote/MA**](https://finance.yahoo.com/quote/MA)  
+
+- **Yahoo Finance**. (October, 2024). **American Express Company (AXP)** stock price, news, quote & history.  
+  Yahoo! Finance. Retrieved October 11, 2024, from [**https://finance.yahoo.com/quote/AXP**](https://finance.yahoo.com/quote/AXP)  
