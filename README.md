@@ -2,10 +2,11 @@
 
 ## 🔗 Links
 
-- [![Medium](https://img.shields.io/badge/Medium-Blog-white?logo=medium&logoColor=white)](https://medium.com/@tellosilvam/comparing-stock-performance-of-amex-visa-and-mastercard-through-data-analysis-491e7acef3fb): 📝 Blog explaining the whole project process, assuming a financial analysis posture.  
-- [![SQL](https://img.shields.io/badge/SQL-Code-orange?logo=sqlite&logoColor=white)](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql): 🗄️ Detailed SQL Code.  
+### [![Medium](https://img.shields.io/badge/Medium-Blog-white?logo=medium&logoColor=white)](https://medium.com/@tellosilvam/comparing-stock-performance-of-amex-visa-and-mastercard-through-data-analysis-491e7acef3fb): 📝 Explanatory Blog 
+### [![SQL](https://img.shields.io/badge/SQL-Code-orange?logo=sqlite&logoColor=white)](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/SQLQuery.sql): 🗄️ Detailed SQL Code
+### [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue?)](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard): 📊 Interactive Dashboard
+
 - [![Python API](https://img.shields.io/badge/Python-API-yellow?logo=python&logoColor=white)](https://github.com/tellosilvam/Finance_Investment_Recommendation/blob/77fe6d126cf9c34f4f1fa26f047a2faf384ab0d5/API_Financial.ipynb): 📡 Yahoo Finance API integration.  
-- [![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue?)](https://public.tableau.com/app/profile/miguel.tello/viz/FinanceProject_17289421123420/Dashboard): 📊 Interactive visualizations.  
 - [![Portfolio](https://img.shields.io/badge/Portfolio-Website-purple?)](https://www.datascienceportfol.io/migueltello): 🌐 Portfolio web.  
 
 ![FinancialThumb](thumbnail.png)
